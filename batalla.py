@@ -1,18 +1,45 @@
-# Batalla de Ayacucho — Datos Generales
+# batalla_ayacucho_app.py
+# App informativa sobre la Batalla de Ayacucho (Perú, 1824)
 
-- **Fecha**: 9 de diciembre de 1824 :contentReference[oaicite:0]{index=0}  
-- **Lugar**: Pampas de la Quinua (Pampa de Ayacucho), distrito de Quinua, región Ayacucho, Perú. Altitud aproximada: ~3,400 metros sobre el nivel del mar. :contentReference[oaicite:1]{index=1}  
-- **Comandantes principales**:  
-  - Por los patriotas: **Antonio José de Sucre** :contentReference[oaicite:2]{index=2}  
-  - Por los realistas: Virrey **José de La Serna** y General **José de Canterac** :contentReference[oaicite:3]{index=3}  
+import streamlit as st
 
-- **Resultado**: Victoria del Ejército Unido Libertador. Rendición de las fuerzas realistas mediante la Capitulación de Ayacucho; esto selló la independencia del Perú y contribuyó al fin del dominio español en América del Sur. :contentReference[oaicite:4]{index=4}  
+st.set_page_config(page_title="Batalla de Ayacucho", page_icon="🇵🇪", layout="centered")
 
-- **Importancia histórica**:  
-  - Fue el último gran enfrentamiento de las guerras de independencia hispanoamericanas. :contentReference[oaicite:5]{index=5}  
- - Marcó el fin efectivo del gobierno virreinal español en la región peruana y el inicio de la consolidación de varias repúblicas en América del Sur. :contentReference[oaicite:6]{index=6}  
-  - Se le reconoce como un hito nacional en Perú, conmemoraciones oficiales cada 9 de diciembre. :contentReference[oaicite:7]{index=7}  
+st.title("⚔️ Batalla de Ayacucho (1824)")
+st.subheader("Datos Generales — Perú")
 
-- **Santuario histórico**: la Pampa de Ayacucho fue declarada Santuario Histórico, con un área protegida para preservar la memoria, patrimonio cultural y manifestaciones asociadas al hecho histórico. :contentReference[oaicite:8]{index=8}  
+st.markdown("""
+**Fecha:** 9 de diciembre de 1824  
+**Lugar:** Pampas de la Quinua, distrito de Quinua, región Ayacucho, Perú  
+**Altitud:** Aproximadamente 3,400 metros sobre el nivel del mar
+""")
 
-- **Monumento relevante**: El **Obelisco de la Pampa de la Quinua**. Construido en 1968, inaugurado oficialmente en 1974 para conmemorar el 150.º aniversario de la Batalla. Tiene ~ 44 metros de altura. :contentReference[oaicite:9]{index=9}  
+st.divider()
+
+st.markdown("### 👥 Comandantes Principales")
+st.write("- **Patriotas:** Antonio José de Sucre")
+st.write("- **Realistas:** José de La Serna (Virrey) y José de Canterac")
+
+st.divider()
+
+st.markdown("### 🏁 Resultado y Consecuencias")
+st.write("**Resultado:** Victoria del Ejército Unido Libertador")
+st.write("**Consecuencia:** Rendición del ejército realista mediante la Capitulación de Ayacucho")
+
+st.divider()
+
+st.markdown("### 📜 Importancia Histórica")
+st.write("- Selló la independencia del Perú.")
+st.write("- Marcó el fin del dominio español en Sudamérica.")
+st.write("- Es considerada la última gran batalla por la independencia de América del Sur.")
+
+st.divider()
+
+st.markdown("### 🏞️ Patrimonio y Monumentos")
+st.write("- **Santuario Histórico:** La Pampa de Ayacucho fue declarada Santuario Histórico Nacional.")
+st.write("- **Monumento:** Obelisco de la Pampa de la Quinua (44 m de altura), inaugurado en 1974 para el 150.º aniversario.")
+
+st.divider()
+
+st.caption("Fuente: [Bicentenario del Perú](https://bicentenario.gob.pe), [Gob.pe](https://www.gob.pe), [Wikipedia](https://es.wikipedia.org/wiki/Batalla_de_Ayacucho)")
+
